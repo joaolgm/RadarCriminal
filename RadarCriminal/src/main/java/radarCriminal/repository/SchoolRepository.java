@@ -12,7 +12,9 @@ public interface SchoolRepository extends CrudRepository<School, String>{
 	
 	List<School> findSchoolByCity(String city);
 	
-	School findSchoolBySchoolCod(String schoolCod);	
+	School findSchoolBySchoolCod(String schoolCod);
+
+	List<School> findSchoolByNeighbourhood(String neighbourhood);	
 	
 
 }

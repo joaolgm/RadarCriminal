@@ -8,8 +8,8 @@ public class School {
 	
 	private String schoolCod, schoolName, rede, sphereAdmin,
 	workState, cep, description, neighbourhood, city, uf, zone;
-	private int NumberOfStudents;
-	private double latitude, longitude;
+	private Integer NumberOfStudents;
+	private Double latitude, longitude;
 	
 	public School() {}
 	
@@ -26,7 +26,7 @@ public class School {
 	
 	@Column(name = "schoolName")
 	public String getSchoolName() {
-		return schoolName;
+		return schoolName.trim();
 	}
 
 	public void setSchoolName(String nome) {
@@ -35,7 +35,7 @@ public class School {
 
 	@Column(name = "rede")
 	public String getRede() {
-		return rede;
+		return rede.trim();
 	}
 
 	public void setRede(String rede) {
@@ -44,7 +44,7 @@ public class School {
 
 	@Column(name = "sphereAdmin")
 	public String getSphereAdmin() {
-		return sphereAdmin;
+		return sphereAdmin.trim();
 	}
 
 	public void setSphereAdmin(String sphereAdmin) {
@@ -53,7 +53,7 @@ public class School {
 
 	@Column(name = "workState")
 	public String getWorkState() {
-		return workState;
+		return workState.trim();
 	}
 
 	public void setWorkState(String workState) {
@@ -62,7 +62,7 @@ public class School {
 
 	@Column(name = "cep")
 	public String getCep() {
-		return cep;
+		return cep.trim();
 	}
 
 	public void setCep(String cep) {
@@ -71,7 +71,7 @@ public class School {
 
 	@Column(name = "description")
 	public String getDescription() {
-		return description;
+		return description.trim();
 	}
 
 	public void setDescription(String description) {
@@ -80,25 +80,25 @@ public class School {
 
 	@Column(name = "neighbourhood")
 	public String getNeighbourhood() {
-		return neighbourhood;
+		return neighbourhood.trim();
 	}
 
 	public void setNeighbourhood(String neighborhood) {
-		this.neighbourhood = neighborhood;
+		this.neighbourhood = neighborhood.trim();
 	}
 
 	@Column(name = "city")
 	public String getCity() {
-		return city;
+		return city.trim();
 	}
 
 	public void setCity(String city) {
-		this.city = city;
+		this.city = city.trim();
 	}
 
 	@Column(name = "uf")
 	public String getUf() {
-		return uf;
+		return uf.trim();
 	}
 
 	public void setUf(String uf) {
@@ -115,32 +115,31 @@ public class School {
 	}
 
 	@Column(name = "numberOfStudents")
-	public int getQtdAlunos() {
+	public Integer getQtdAlunos() {
 		return NumberOfStudents;
 	}
 
-	public void setQtdAlunos(int qtdAlunos) {
+	public void setQtdAlunos(Integer qtdAlunos) {
 		this.NumberOfStudents = qtdAlunos;
 	}
 	
 	@Column(name = "latitude")
-	public double getLatitude() {
+	public Double getLatitude() {
 		return this.latitude;
 	}
 
-	public void setLatitude(double latitude) {
+	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
 
 	@Column(name = "longitude")
-	public double getLongitude() {
+	public Double getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(double longitude) {
+	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
 
 	
-
 }
