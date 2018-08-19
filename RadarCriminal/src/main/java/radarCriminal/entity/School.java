@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class School {
 	
 	private String schoolCod, schoolName, rede, sphereAdmin,
-	workState, cep, description, neighborhood, city, uf, zone;
+	workState, cep, description, neighbourhood, city, uf, zone;
 	private int NumberOfStudents;
 	private double latitude, longitude;
 	
@@ -29,7 +29,7 @@ public class School {
 		return schoolName;
 	}
 
-	public void setschoolName(String nome) {
+	public void setSchoolName(String nome) {
 		this.schoolName = nome;
 	}
 
@@ -43,11 +43,11 @@ public class School {
 	}
 
 	@Column(name = "sphereAdmin")
-	public String getsphereAdmin() {
+	public String getSphereAdmin() {
 		return sphereAdmin;
 	}
 
-	public void setsphereAdmin(String sphereAdmin) {
+	public void setSphereAdmin(String sphereAdmin) {
 		this.sphereAdmin = sphereAdmin;
 	}
 
@@ -70,29 +70,29 @@ public class School {
 	}
 
 	@Column(name = "description")
-	public String getdescription() {
+	public String getDescription() {
 		return description;
 	}
 
-	public void setdescription(String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
-	@Column(name = "neighborhood")
-	public String getneighborhood() {
-		return neighborhood;
+	@Column(name = "neighbourhood")
+	public String getNeighbourhood() {
+		return neighbourhood;
 	}
 
-	public void setneighborhood(String neighborhood) {
-		this.neighborhood = neighborhood;
+	public void setNeighbourhood(String neighborhood) {
+		this.neighbourhood = neighborhood;
 	}
 
 	@Column(name = "city")
-	public String getcity() {
+	public String getCity() {
 		return city;
 	}
 
-	public void setcity(String city) {
+	public void setCity(String city) {
 		this.city = city;
 	}
 
